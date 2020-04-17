@@ -1,0 +1,18 @@
+{
+  "name": "typescript-type-tests-demo",
+  "author": "Erica Pisani",
+  "description": "Simple app to test different ways of Typescript Type unit testing",
+  "version": "0.0.1",
+  "scripts": {
+    "compile": "tsc src/*.ts",
+    "clean": "rm src/*.js",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@types/jest": "^25.2.1",
+    "jest": "^25.3.0",
+    "ts-jest": "^25.4.0",
+    "tsd": "^0.11.0",
+    "typescript": "^3.8.3"
+  }
+}
