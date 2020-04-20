@@ -5,10 +5,10 @@
   "version": "0.0.1",
   "scripts": {
     "compile": "tsc src/*.ts",
-    "generate-typings": "tsc src/*.ts --declaration --declarationDir .",
-    "clean": "rm src/*.js",
+    "generate-typings": "tsc src/*.ts --declaration --emitDeclarationOnly --declarationDir .",
     "test": "jest",
-    "type-tsd-test": "npx tsd"
+    "type-tsd-test": "npm run generate-typings && npx tsd",
+    "test-all": "npm run test && npm run type-tsd-test"
   },
   "devDependencies": {
     "@types/jest": "^25.2.1",
@@ -16,5 +16,6 @@
     "ts-jest": "^25.4.0",
     "tsd": "^0.11.0",
     "typescript": "^3.8.3"
-  }
+  },
+  "license": "MIT"
 }
