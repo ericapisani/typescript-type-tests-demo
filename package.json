@@ -5,8 +5,10 @@
   "version": "0.0.1",
   "scripts": {
     "compile": "tsc src/*.ts",
+    "generate-typings": "tsc src/*.ts --declaration --declarationDir .",
     "clean": "rm src/*.js",
-    "test": "jest"
+    "test": "jest",
+    "type-tsd-test": "npx tsd"
   },
   "devDependencies": {
     "@types/jest": "^25.2.1",
